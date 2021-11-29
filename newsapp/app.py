@@ -10,7 +10,7 @@ DB_NAME = "database.db"
 
 def createApp():
     app = Flask(__name__)
-    app.config["SECRET_KEY"] = "idkifitismeornot111155"
+    app.config["SECRET_KEY"] = "090078601"
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{DB_NAME}"
     app.jinja_env.add_extension('jinja2.ext.loopcontrols')
     
