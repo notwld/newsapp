@@ -98,7 +98,6 @@ def news():
     response = requests.get(url)
     data = response.json()
     articles = data["articles"]
-    print(articles)
     return render_template("news.html",articles=articles,user=current_user)
 
     
