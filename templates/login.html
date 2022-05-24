@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+ Login
+{% endblock %}
+
+{% block content %}
+<div style="height: 100vh;">
+<form action="" method="post">
+    <h1 class="display-3" align=center>
+        Login
+    </h1>
+    <br>
+    <div class="form-group">
+           
+                <input type="text" class="form-control " name="email" placeholder="Your Email *" value="" />
+          
+                <br>
+ 
+                <input type="password" class="form-control " name="password" placeholder="Your Password *" value="" />
+       <br>
+            <div align="center">
+                <button class="btn btn-primary">Login</button>
+            </div>
+    </div>
+</form>
+</div>
+{% endblock %}
