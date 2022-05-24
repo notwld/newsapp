@@ -2,8 +2,8 @@ from operator import pos
 from flask import Blueprint,render_template,request,flash,redirect,url_for,jsonify
 from flask_login import login_required,current_user
 from sqlalchemy.sql.functions import user
-from .models import Post,User,Comments,Likes
-from . import db
+from models import Post,User,Comments,Likes
+from __init__ import db
 import requests
 
 views = Blueprint("views",__name__)

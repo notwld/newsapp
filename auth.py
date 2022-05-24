@@ -1,7 +1,7 @@
 from flask import Blueprint,render_template,url_for,redirect,request,flash
 from sqlalchemy.sql.functions import user
-from . import db
-from .models import User
+from __init__ import db
+from models import User
 from flask_login import login_user,logout_user,login_required,current_user
 from werkzeug.security import generate_password_hash,check_password_hash
 
